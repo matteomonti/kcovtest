@@ -2,6 +2,7 @@
 
 int main()
 {
+
 	std :: cout << "Tu madre!" << std :: endl;
 	int i;
 	std :: cin >> i;
