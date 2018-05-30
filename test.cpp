@@ -2,11 +2,14 @@
 
 template <typename type> void f()
 {
-	std :: cout << __PRETTY_FUNCTION__ << std :: endl;
+	if constexpr (sizeof(type) > 2)
+		std :: cout << "asdasdasd" << std :: endl;
+	else
+		std :: cout << "lmfao" << std :: endl;
 }
 
 int main()
 {
-	f <int> ();
-	f <double> ();
+	f <char> ();
+	f <uint16_t> ();
 }
