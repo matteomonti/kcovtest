@@ -12,4 +12,6 @@ int main()
 {
 	f <char> ();
 	f <uint16_t> ();
+
+	std :: cout << "Hello World!!" << std :: endl;
 }
