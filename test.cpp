@@ -4,14 +4,10 @@
 
 int main()
 {
-	int j;
-	for(int i = 0; i < rand() % 1000000; i++)
-		j += rand();
+	int total = 0;
+	srand(time(nullptr));
+	for(int i = 0; i < rand() % 1000; i++)
+		total += rand();
 
-	fork();
-
-	for(int i = 0; i < rand() % 1000000; i++)
-                j += rand();
-
-	std :: cout << j << std :: endl;
+	return total;
 }
